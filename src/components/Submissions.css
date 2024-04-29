@@ -1,0 +1,19 @@
+
+table{
+    background: rgb(206, 206, 255);
+    width: 100%;
+}
+th,td{
+    text-align: start;
+    padding:9px;
+    font-size: small;
+    border-bottom: 1px solid rgb(133, 133, 133);
+}
+td{
+    border-right: 1px solid rgb(133, 133, 133);
+
+}
+th{
+    background: rgb(63, 63, 204);
+    color: white;
+}

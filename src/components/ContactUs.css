@@ -1,0 +1,19 @@
+input{
+    border-radius: 4px;
+    width: 100%;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 12px;
+    border: 1px solid rgba(112, 128, 144, 0.251);
+    color: slategray;
+    background: rgba(247, 247, 247, 0);
+}
+label,h1{
+    font-size: 12px;
+    color: rgb(64, 64, 64);
+}
+input:focus{
+    outline: none;
+    color:black;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.082);
+}
