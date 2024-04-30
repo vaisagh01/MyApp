@@ -79,7 +79,7 @@ export default function ContactUs() {
       <div className='flex w-full h-full items-start flex-col px-9 py-14'>
         <form>
           <p className='font-semibold text-5xl text-slate-500 mt-2 mb-9 flex items-center justify-center gap-3'><p>Contact Us</p> <Headphones className=' mt-1 size-9'/> </p>
-         <div className='flex justify-between w-full '>
+          <div className='flex justify-between w-full '>
             <section>
               <label htmlFor="First Name">First Name</label>
               <input onChange={(e)=>{setFirstName(e.target.value)}} type="text" name='First-Name' placeholder='Enter your First Name' />
@@ -88,17 +88,16 @@ export default function ContactUs() {
               <label htmlFor="Last-Name">Last Name</label>
               <input onChange={(e)=>{setLastName(e.target.value)}}  type="text" name='Last-Name' placeholder='Enter your Last Name' />
             </section>
-            
           </div>
 
           <label htmlFor="phoneno">Phone no</label>
-          <input onChange={(e)=>{setPhoneno(e.target.value)}}  type="number" name="phoneno" id="" placeholder='Enter your Phone No.' />
+          <input onChange={(e)=>{setPhoneno(e.target.value)}}  type="number" name="phoneno" placeholder='Enter your Phone No.' />
 
           <label htmlFor="email">E-Mail</label>
-          <input onChange={(e)=>{setEmail(e.target.value)}}  type="email" name="email" id="" placeholder='Enter your Email' />
+          <input onChange={(e)=>{setEmail(e.target.value)}}  type="email" name="email" placeholder='Enter your Email' />
 
           <label htmlFor="url">Link</label>
-          <input onChange={(e)=>{setLink(e.target.value)}}  type="url" name="url" id="" placeholder='Paste your Link' />
+          <input onChange={(e)=>{setLink(e.target.value)}}  type="url" name="url"placeholder='Paste your Link' />
           <h1>Upload Files</h1>
         </form>
 
