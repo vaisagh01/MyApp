@@ -1,8 +1,8 @@
-### Overview
-This is create-react-app which has Contact Us component. This component handles a form which stores data locally and also sends file to a mock server created using Postman mock servers.
+# Overview
+This is create-react-app which has Contact Us component. This component handles a form which stores data locally and also sends file to a mock server created using Postman mock servers. The app is deployed on Vercel (instruction given below).  
 
 
-# Getting Started with Create React App
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
