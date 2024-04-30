@@ -19,9 +19,9 @@ export default function Submissions() {
         fetchData();
     },[storedData])
   return (
-    <div className=''>
-      <NavLink to={'/'}><button className='bg-purple-700 hover:-translate-x-[4px] transition-all rounded-3xl px-1 pr-3 py-1 flex mb-3 text-white text-xs items-center '><ArrowLeft className='p-[2px]'/><p>Go Back</p></button></NavLink>
-        <div className=' overflow-auto rounded-xl h-[86vh] bg-slate-100 w-[90vw]'>
+    <div className='ml-14 z-30'>
+    <NavLink to={'/'}><button className='bg-indigo-700 hover:-translate-x-[4px] transition-all rounded-3xl px-1 pr-3 py-1 flex mb-3 text-white text-xs items-center '><ArrowLeft className='p-[2px]'/><p>Go Back</p></button></NavLink>
+        <div className=' overflow-auto rounded-xl h-[86vh] bg-slate-100 w-[97vw]'>
             <table>
                 <tr>
                     <th>No</th>
@@ -44,8 +44,8 @@ export default function Submissions() {
                     )
                 })}
             </table>
-      </div>
-        <button onClick={handleDeleteList} className='bg-red-600 rounded-3xl absolute top-5 right-5  p-1 text-white '> clear data</button>
+        </div>
+    <button onClick={handleDeleteList} className='bg-red-600 rounded-3xl absolute top-5 right-5  p-1 text-white '> clear data</button>
     </div>
   )
 }
