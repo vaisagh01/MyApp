@@ -78,7 +78,7 @@ export default function ContactUs() {
     <div className=' overflow-hidden w-full flex flex-col rounded-xl mx-2 sm:w-[500px] h-[98%] bg-white items-center z-10 shadow-xl'>
       <div className='flex w-full h-full items-start flex-col px-9 py-14'>
         <form>
-          <p className='font-semibold text-4xl text-slate-500 mt-2 mb-4 flex items-center justify-evenly'><p>Contact Us</p> <Headphones className=' mt-1 size-9'/> </p>
+          <p className='font-semibold text-5xl text-slate-500 mt-2 mb-9 flex items-center justify-center gap-3'><p>Contact Us</p> <Headphones className=' mt-1 size-9'/> </p>
          <div className='flex justify-between w-full '>
             <section>
               <label htmlFor="First Name">First Name</label>
