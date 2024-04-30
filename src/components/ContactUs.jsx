@@ -79,7 +79,7 @@ export default function ContactUs() {
       <div className='flex w-full h-full items-start flex-col px-5 py-3'>
         <form>
           <p className='font-semibold text-4xl text-slate-500 mt-2 mb-4 flex items-center justify-evenly'><p>Contact Us</p> <Headphones className=' mt-1 size-9'/> </p>
-         <div className='flex gap-4'>
+         <div className='flex justify-between w-full '>
             <section>
               <label htmlFor="First Name">First Name</label>
               <input onChange={(e)=>{setFirstName(e.target.value)}} type="text" name='First-Name' placeholder='Enter your First Name' />
