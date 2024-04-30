@@ -75,8 +75,8 @@ export default function ContactUs() {
 
 
   return (
-    <div className=' overflow-hidden w-[350px] flex flex-col rounded-xl mx-2 sm:w-1/3 h-[98%] bg-white items-center z-10 shadow-xl'>
-      <div className='flex w-full bg-red-200 items-start flex-col px-5 py-3'>
+    <div className=' overflow-hidden w-full flex flex-col rounded-xl mx-2 sm:w-[400px] h-[98%] bg-white items-center z-10 shadow-xl'>
+      <div className='flex w-full h-full items-start flex-col px-5 py-3'>
         <form>
           <p className='font-semibold text-4xl text-slate-500 mt-2 mb-4 flex items-center justify-evenly'><p>Contact Us</p> <Headphones className=' mt-1 size-9'/> </p>
          <div className='flex gap-4'>
@@ -103,14 +103,14 @@ export default function ContactUs() {
         </form>
 
         <div className='flex flex-col gap-2 w-full '>
-          <input className='border-none file:w-1/2 file:border-[1px] file:shadow-md  px-0 file:bg-blue-100 file:rounded-md file:p-3 file:cursor-pointer' name='image' onChange={(e)=>{setFile(e.target.files[0])}} type="file" />
+          <input className='border-none file:w-1/2 file:border-slate-300 file:border-[1px] file:shadow-sm  px-0 file:bg-blue-100 file:rounded-md file:p-3 file:cursor-pointer' name='image' onChange={(e)=>{setFile(e.target.files[0])}} type="file" />
           <motion.button whileTap={{scale:1.1}}  className='bg-indigo-500 h-10 hover:bg-indigo-600 rounded-lg transition-all hover:-translate-y-[2px] shadow-2xl text-white px-4 py-1 ' onClick={ handleUpload } ><p>Submit</p></motion.button>
         </div>
 
         {popup ? <Popup success={success} />:null}
         
+        <NavLink to={'/Submissions'} ><button className='bg-lime-600 items-center shadow-2xl hover:translate-x-[7px] transition-all rounded-md px-16 py-2 flex text-sm text-slate-100 mt-4'><p>View Submissions</p> <ArrowRight className='pt-[5px] p-[2px]'/></button></NavLink>
       </div>
-      <NavLink to={'/Submissions'} ><button className='bg-lime-600 mb-4 items-center shadow-2xl hover:translate-x-[7px] transition-all rounded-md px-16 py-2 flex text-sm text-slate-100 mt-4'><p>View Submissions</p> <ArrowRight className='pt-[5px] p-[2px]'/></button></NavLink>
     </div>
   )
 }
