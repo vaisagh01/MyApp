@@ -75,8 +75,8 @@ export default function ContactUs() {
 
 
   return (
-    <div className=' flex flex-col w-full xl:w-1/3 h-4/3 bg-white items-center z-10 shadow-xl'>
-      <div className='flex w-[350px] items-start flex-col px-8 py-7'>
+    <div className=' overflow-hidden flex flex-col w-full rounded-xl mr-2 md:w-1/3 h-[98%] bg-white items-center z-10 shadow-xl'>
+      <div className='flex w-[350px] items-start flex-col px-5 py-3'>
         <form>
           <p className='font-semibold text-4xl text-slate-500 mt-2 mb-4 flex items-center justify-evenly'><p>Contact Us</p> <Headphones className=' mt-1 size-9'/> </p>
          <div className='flex gap-4'>
