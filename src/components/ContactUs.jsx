@@ -1,11 +1,10 @@
 import {useState} from 'react'
 import './ContactUs.css';
 import {motion} from 'framer-motion'
-import { Check, ArrowRight, Headphones } from 'lucide-react';
+import {ArrowRight, Headphones } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 import Popup from './Popup';
 
-let storedForms = [];
 
 export default function ContactUs() {
   const [file, setFile] = useState(null);
@@ -15,7 +14,6 @@ export default function ContactUs() {
   const [lastName, setLastName] = useState("");
   const [phone, setPhoneno] = useState("");
   const [email, setEmail] = useState("");
-  const [fileInfo, setFileInfo] = useState("")
   const [link, setLink] = useState("");
 
   // Local Storage setup or importing
@@ -77,13 +75,10 @@ export default function ContactUs() {
 
 
   return (
-    <div className=' flex flex-col h-screen bg-white items-center z-10 shadow-xl'>
-
+    <div className=' flex flex-col w-full xl:w-1/3 h-4/3 bg-white items-center z-10 shadow-xl'>
       <div className='flex w-[350px] items-start flex-col px-8 py-7'>
-
         <form>
           <p className='font-semibold text-4xl text-slate-500 mt-2 mb-4 flex items-center justify-evenly'><p>Contact Us</p> <Headphones className=' mt-1 size-9'/> </p>
-
          <div className='flex gap-4'>
             <section>
               <label htmlFor="First Name">First Name</label>
@@ -115,7 +110,7 @@ export default function ContactUs() {
         {popup ? <Popup success={success} />:null}
         
       </div>
-      <NavLink to={'/Submissions'} ><button className='bg-lime-600 items-center shadow-2xl hover:translate-x-[7px] transition-all rounded-md px-16 py-2 flex text-sm text-slate-100 mt-4'><p>View Submissions</p> <ArrowRight className='pt-[5px] p-[2px]'/></button></NavLink>
+      <NavLink to={'/Submissions'} ><button className='bg-lime-600 mb-4 items-center shadow-2xl hover:translate-x-[7px] transition-all rounded-md px-16 py-2 flex text-sm text-slate-100 mt-4'><p>View Submissions</p> <ArrowRight className='pt-[5px] p-[2px]'/></button></NavLink>
     </div>
   )
 }

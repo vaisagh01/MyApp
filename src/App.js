@@ -1,9 +1,7 @@
 import './App.css';
 import ContactUs from './components/ContactUs';
-// import { Router, Route} from 'lucide-react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Submissions from './components/Submissions';
-import { useState } from 'react';
 
 function App() {
 
